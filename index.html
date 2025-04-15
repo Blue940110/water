@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>John's Educational Adventure</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background-color: #3498db;
+      color: white;
+      padding: 1rem 0;
+      text-align: center;
+    }
+    nav {
+      background-color: #2980b9;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    nav a {
+      color: white;
+      padding: 1rem;
+      text-decoration: none;
+      flex: 1 1 100px;
+      text-align: center;
+    }
+    nav a:hover {
+      background-color: #1c5980;
+    }
+    .scene {
+      max-width: 900px;
+      margin: 2rem auto;
+      background: white;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    .scene img {
+      width: 100%;
+      height: auto;
+      margin-top: 1rem;
+      border-radius: 10px;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #3498db;
+      color: white;
+      margin-top: 2rem;
+    }
+    @media (max-width: 600px) {
+      nav a {
+        flex: 1 1 50%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>John's Educational Adventure</h1>
+  </header>
+  <nav>
+    <a href="#scene1">Scene 1</a>
+    <a href="#scene2">Scene 2</a>
+    <a href="#scene3">Scene 3</a>
+    <a href="#scene4">Scene 4</a>
+    <a href="#scene5">Scene 5</a>
+    <a href="#scene6">Scene 6</a>
+    <a href="#scene7">Scene 7</a>
+    <a href="#scene8">Scene 8</a>
+    <a href="#scene9">Scene 9</a>
+    <a href="#scene10">Scene 10</a>
+  </nav>
+
+  <main>
+    <!-- Scene 1 to 10 -->
+    <section id="scene1" class="scene">
+      <h2>Scene 1: A New Day Begins</h2>
+      <p>John stands at the doorstep of his house, smiling and ready to start his adventure.</p>
+      <img src="IMAGE1" alt="Scene 1 image placeholder">
+    </section>
+
+    <section id="scene2" class="scene">
+      <h2>Scene 2: Helping a Friend</h2>
+      <p>John helps a classmate who fell on the playground, showing kindness and care.</p>
+      <img src="IMAGE2" alt="Scene 2 image placeholder">
+    </section>
+
+    <section id="scene3" class="scene">
+      <h2>Scene 3: Learning Together</h2>
+      <p>John answers questions in class and gets praised by the teacher.</p>
+      <img src="IMAGE3" alt="Scene 3 image placeholder">
+    </section>
+
+    <section id="scene4" class="scene">
+      <h2>Scene 4: Making New Friends</h2>
+      <p>John invites a lonely classmate to play and builds a new friendship.</p>
+      <img src="IMAGE4" alt="Scene 4 image placeholder">
+    </section>
+
+    <section id="scene5" class="scene">
+      <h2>Scene 5: Helping at Home</h2>
+      <p>John helps his mom clean up and learns the importance of teamwork at home.</p>
+      <img src="IMAGE5" alt="Scene 5 image placeholder">
+    </section>
+
+    <section id="scene6" class="scene">
+      <h2>Scene 6: Caring for Nature</h2>
+      <p>John picks up litter at the park and teaches others to care for the environment.</p>
+      <img src="IMAGE6" alt="Scene 6 image placeholder">
+    </section>
+
+    <section id="scene7" class="scene">
+      <h2>Scene 7: Being Responsible</h2>
+      <p>John organizes his school bag and gets ready for tomorrow's lessons.</p>
+      <img src="IMAGE7" alt="Scene 7 image placeholder">
+    </section>
+
+    <section id="scene8" class="scene">
+      <h2>Scene 8: Showcasing Talents</h2>
+      <p>John takes part in a school talent show and performs confidently.</p>
+      <img src="IMAGE8" alt="Scene 8 image placeholder">
+    </section>
+
+    <section id="scene9" class="scene">
+      <h2>Scene 9: Solving Problems</h2>
+      <p>John faces a challenge but finds a way to solve it with courage.</p>
+      <img src="IMAGE9" alt="Scene 9 image placeholder">
+    </section>
+
+    <section id="scene10" class="scene">
+      <h2>Scene 10: A Family Moment</h2>
+      <p>As the sun sets, John walks with his family, sharing stories and smiling.</p>
+      <img src="IMAGE10" alt="Scene 10 image placeholder">
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 John's Educational Adventure. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Smooth scroll effect
+    document.querySelectorAll('nav a').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
